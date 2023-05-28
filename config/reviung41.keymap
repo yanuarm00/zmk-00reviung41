@@ -9,9 +9,9 @@
 //default_layer BEGIN
                 default_layer {
 // --------------------------------------         --------------------------------------
-// |TAB/ESC|  Q  |  W  |  E  |  R  |  T  |         |  Y  |  U  |  I  |  O  |  P  |  BS/DEL  |
+// |ESC/TAB|  Q  |  W  |  E  |  R  |  T  |         |  Y  |  U  |  I  |  O  |  P  |  BS/DEL  |
 // --------------------------------------         --------------------------------------
-// |TAB/3|  A  |  S  |  D  |  F  |  G  |         |  H  |  J  |  K  |  L  |  ;  |  ALT   |
+// |CAPS/3|  A  |  S  |  D  |  F  |  G  |         |  H  |  J  |  K  |  L  |  ;  |  ALT   |
 // --------------------------------------         --------------------------------------
 // | SHIFT |  Z  |  X  |  C  |  V  |  B  |         |  N  |  M  |  ,  |  .  |  /  | SHIFT |
 // -------------------------------------------------------------------------------------
@@ -19,7 +19,7 @@
 //                          ----------------------------------- 
 
                         bindings = <
-   &mt TAB ESC       &kp Q    &kp W    &kp E    &kp R          &kp T                      &kp Y        &kp U            &kp I                &kp O   &kp P    &mt DEL BSPC
+   &mt ESC TAB       &kp Q    &kp W    &kp E    &kp R          &kp T                      &kp Y        &kp U            &kp I                &kp O   &kp P    &mt DEL BSPC
    &lt 3 CAPS        &kp A    &kp S    &kp D    &kp F          &kp G                      &kp H        &kp J            &kp K                &kp L   &kp SEMI &kp RALT
    &kp LSHIFT        &kp Z    &kp X    &kp C    &kp V          &kp B                      &kp N        &kp M            &kp COMMA          &kp DOT &kp FSLH &kp RSHFT
                                                 &kp LALT       &mt LGUI BSPC    &lt 1 SPACE    &lt 2 RET    &kp RGUI
