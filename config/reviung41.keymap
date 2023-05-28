@@ -14,23 +14,23 @@
             // --------------------------------------         --------------------------------------
             // |CAPS/3|  A  |  S  |  D  |  F  |  G  |         |  H  |  J  |  K  |  L  |  ;  |  ALT   |
             // --------------------------------------         --------------------------------------
-            // | SHIFT |  Z  |  X  |  C  |  V  |  B  |         |  N  |  M  |  ,  |  .  |  /  | SHIFT |
+            // | SHIFT |  Z  |  X  |  C  |  V  |  B  |         |  N  |  M  |  ,  |  .  |  /  | SHIFT/ENT |
             // -------------------------------------------------------------------------------------
-            //                       | ALT | WIN/BS |   SB    | WIN/ENT| WIN |
+            //                       | ALT | WIN/BS |   1/SPC  | WIN/ENT| WIN |
             //                          ----------------------------------- 
 
             bindings = <
  &mt ESC TAB  &kp Q  &kp W     &kp E          &kp R  &kp T               &kp Y      &kp U      &kp I    &kp O     &kp P  &mt DEL BSPC
 &kp CAPSLOCK  &kp A  &kp S     &kp D          &kp F  &kp G               &kp H      &kp J      &kp K    &kp L  &kp SEMI      &kp RALT
-  &kp LSHIFT  &kp Z  &kp X     &kp C          &kp V  &kp B               &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH     &kp RSHFT
+  &kp LSHIFT  &kp Z  &kp X     &kp C          &kp V  &kp B               &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH     &mt RSHFT RET
                             &kp LALT  &mt LGUI BSPC         &lt 1 SPACE         &lt 2 RET   &kp RGUI
             >;
         };
 
         //LAYER ENDS
-        //space_layer BEGIN
+        //number_layer BEGIN
 
-        space_layer {
+        number_layer {
             // --------------------------------------         --------------------------------------
             // | ESC  |     |     |     |     |     |         |  +  |  7  |  8  |  9  |  *  | BKSP |
             // --------------------------------------         --------------------------------------
@@ -45,7 +45,7 @@
        &kp ESC  &none  &none  &none  &none  &none          &kp PLUS  &kp N7  &kp N8  &kp N9   &kp STAR    &kp BSPC
 &mt LSHIFT TAB  &none  &none  &none  &none  &none         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH     &kp DEL
      &kp LCTRL  &none  &none  &none  &none  &none            &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp RSHIFT
-                              &none  &none         &none              &none   &none
+                              &trans  &trans         &trans              &trans   &trans
             >;
         };
 
@@ -67,7 +67,7 @@
        &kp ESC  &none  &none     &none     &none  &none             &kp C_VOL_UP   &kp PG_UP              &kp UP   &kp PG_DN  &kp C_MUTE    &kp BSPC
 &mt LSHIFT TAB  &none  &none     &none     &none  &none                 &kp HOME    &kp LEFT            &kp DOWN   &kp RIGHT     &kp END     &kp DEL
      &kp LCTRL  &none  &none     &none     &none  &none             &kp C_VOL_DN  &kp C_PREV            &kp C_PP  &kp C_NEXT   &kp RCTRL  &kp RSHIFT
-                              &kp LGUI  &kp LALT         &kp SPACE                   &kp RET  &kp K_CONTEXT_MENU
+                              &trans  &trans         &trans                   &trans  &trans
             >;
         };
 
@@ -88,7 +88,7 @@
 &none  &none  &none  &none  &none  &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_CLR
 &none  &none  &none  &none  &none  &none                &none         &none         &none         &none         &none        &none
 &none  &none  &none  &none  &none  &none                &none         &none         &none         &none         &none  &bootloader
-                     &none  &none         &none                       &none         &none
+                     &trans  &trans         &trans                    &trans        &trans
             >;
         };
     };
