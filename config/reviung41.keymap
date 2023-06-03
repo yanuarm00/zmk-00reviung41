@@ -3,8 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <1000>;
-    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
 };
 
 / {
