@@ -1,6 +1,13 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+ 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 &mt {
     tapping-term-ms = <400>;
@@ -15,9 +22,9 @@
 
         default_layer {
             bindings = <
- &mt ESC TAB  &kp Q       &kp W        &kp E                &kp R       &kp T                    &kp Y                &kp U        &kp I         &kp O     &kp P  &mt RIGHT_BRACKET LEFT_BRACKET
-&kp CAPSLOCK  &kp A       &kp S   &mt LALT D           &mt LGUI F       &kp G                    &kp H           &mt RGUI J   &mt RALT K         &kp L  &kp SEMI                &kp SINGLE_QUOTE
-  &kp LSHIFT  &kp Z  &mt LALT X        &kp C                &kp V  &mt LGUI B               &mt RGUI N                &kp M    &kp COMMA  &mt RALT DOT  &kp FSLH                 &lt 1 BACKSLASH
+&mt ESC TAB   &kp Q   &kp W        &kp E          &kp R         &kp T           &kp Y         &kp U        &kp I         &kp O         &kp P         &mt RIGHT_BRACKET LEFT_BRACKET
+&kp CAPSLOCK  &kp A   &kp S        &mt LALT D     &mt LGUI F    &kp G           &kp H         &mt RGUI J   &mt RALT K    &kp L         &kp SEMI      &kp SINGLE_QUOTE
+&kp LSHIFT    &kp Z   &mt LALT X   &kp C          &kp V         &mt LGUI B      &mt RGUI N    &kp M        &kp COMMA     &mt RALT DOT  &kp FSLH      &lt 1 BACKSLASH
                                  &lt 3 LG(Z)  &mt LEFT_SHIFT BSPC              &lt 1 SPACE              &mt RIGHT_SHIFT RET  &lt 2 RG(A)
             >;
         };
