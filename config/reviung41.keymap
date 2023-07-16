@@ -9,13 +9,21 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-
 &mt {
     flavor = "tap-preferred";
     tapping_term_ms = <200>;
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        adj_layer {
+            bindings = <&mo 3>;
+            key-positions = <37 39>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,7 +45,7 @@
             bindings = <
 &trans  &trans  &trans   &none   &none  &none           &kp PLUS  &kp N7  &kp N8  &kp N9   &kp STAR      &kp GRAVE
 &trans   &none   &none   &none   &none  &none          &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH  &kp BACKSLASH
-&trans   &none   &none   &none   &none  &none             &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL         &trans
+&trans   &none   &none   &none   &none  &none             &kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL     &kp RSHIFT
                         &trans  &trans         &trans             &trans  &trans
             >;
         };
